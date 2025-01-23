@@ -78,7 +78,7 @@ const UserSchedule = ({ user, setUser }) => {
                   className="delete-button"
                   onClick={() => handleRemoveShow(user.id, show.id)}
                 >
-                  🗑️
+                  delete
                 </button>
               </li>
             );
