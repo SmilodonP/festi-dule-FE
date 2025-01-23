@@ -26,9 +26,10 @@ const UserGrid = () => {
     setSearchQuery(event.target.value);
   };
   
+
   return (
     <div className="user-grid">
-      <header>
+      <header className="user-grid-header">
         <h1>FestiDule</h1>
         <h2>Admin View</h2>
         <input
@@ -36,18 +37,14 @@ const UserGrid = () => {
           value={searchQuery}
           onChange={handleSearchChange}
           placeholder="Search by name, username, or email"
+          className="user-search"
         />
       </header>
       <div className="grid">
-        {Array.isArray(users) && users.length > 0 ? (
-          users.map((user) => (
-            <UserCard
-              key={user.id}
-              user={user}
-            />
-          ))
+        {users?.length ? (
+          users.map((user) => <UserCard key={user.id} user={user} />)
         ) : (
-          <p>No users available</p>
+          <p className="no-users">No users available</p>
         )}
       </div>
     </div>

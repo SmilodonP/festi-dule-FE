@@ -35,6 +35,7 @@ const UserDetail = () => {
       <section className='user-info'>
         <h3>Username: {user.attributes?.username}</h3>
         <h4>Name: {user.attributes?.first_name} {user.attributes?.last_name}</h4>
+        <h4>Email: {user.attributes?.email}</h4>
       </section>
       <section className='user-schedule'>
         <UserSchedule user={user} setUser={setUser} />
