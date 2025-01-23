@@ -59,7 +59,14 @@ const UserSchedule = ({ user, setUser }) => {
       <h3>Scheduled Shows:</h3>
       {Array.isArray(shows) && shows.length > 0 ? (
         <ul>
-          {shows.map((show) => {
+          {shows
+          .sort((a, b) => {
+            const dateA = new Date(`${a.attributes?.date}`);
+            const dateB = new Date(`${b.attributes?.date}`);
+            
+            return dateA - dateB; 
+          })
+          .map((show) => {
             const { formattedDate, formattedStartTime, formattedEndTime } = formatShowDetails(
               show.attributes?.date,
               show.attributes?.start_time,
