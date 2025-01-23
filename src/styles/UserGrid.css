@@ -1,0 +1,9 @@
+.header {
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
