@@ -43,7 +43,7 @@ This project is a mock take home assessment that was assigned as the final asses
 Check it out!
 
 ![]
-(https://github.com/SmilodonP/festi-dule-BE/blob/main/readme_assets/festidule-gif.gif)
+(https://github.com/SmilodonP/festi-dule-FE/blob/main/src/assets/festidule-gif.gif)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
